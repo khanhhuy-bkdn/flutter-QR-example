@@ -2,6 +2,7 @@ import 'package:flutter_demo_getx/pages/home-qr/bindings/home_qr_binding.dart';
 import 'package:flutter_demo_getx/pages/home-qr/views/home_qr_view.dart';
 import 'package:flutter_demo_getx/pages/login/bindings/login_binding.dart';
 import 'package:flutter_demo_getx/pages/login/views/SignIn_screen.dart';
+import 'package:flutter_demo_getx/pages/map/views/Map.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 part 'app_routes.dart';
@@ -20,6 +21,10 @@ class AppPages {
       name: Routes.home,
       page: () => HomeQrView(),
       binding: HomeQrBinding(),
+    ),
+    GetPage(
+      name: Routes.map,
+      page: () => Map(),
     ),
   ];
 }

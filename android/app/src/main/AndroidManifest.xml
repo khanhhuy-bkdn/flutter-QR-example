@@ -3,6 +3,8 @@
    <uses-permission android:name="android.permission.INTERNET" />
    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+   <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+   <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
    <queries>
     <!-- If your app opens https URLs -->
     <intent>
@@ -59,5 +61,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA_q6c3EhLBltI7ImcglwFVCnH9-PN0D2o"/>
     </application>
 </manifest>

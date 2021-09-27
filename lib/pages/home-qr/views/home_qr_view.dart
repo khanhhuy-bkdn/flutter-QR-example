@@ -30,7 +30,7 @@ class _HomeQrViewState extends State<HomeQrView>
 
   scanCode() async {
     await QRScan.scan().then((result) {
-      result = 'https://stackoverflow.com/questions/ask';
+      //result = 'https://stackoverflow.com/questions/ask';
       resultQrcode.value = result ?? '';
       if (result != null && result != "") {
         if (result.contains("https") || result.contains("http")) {
@@ -108,11 +108,11 @@ class _HomeQrViewState extends State<HomeQrView>
             children: <Widget>[
               IconButton(
                 icon: Icon(
-                  Icons.menu,
+                  Icons.map,
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  _scaffoldKey.currentState!.openDrawer();
+                  Get.toNamed(Routes.map);
                 },
               ),
               Expanded(
